@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3depth</title>
+    <style type="text/css">
+        .content{
+            border: 1px #f00 solid;
+            width: 1000px;
+            height: 380px;
+        }
+        .left{
+            width: 33.3%;
+            height: 100%;
+            float: left;
+        }
+        .center{
+            width: 33.3%;
+            height: 100%;
+            float: left;
+        }
+        .right{
+            width: 33.4%;
+            height: 100%;
+            float: left;
+        }
+        .line>div{
+            border-right: 1px skyblue solid;
+            padding: 20px;
+            height: 340px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+    <div class="left line">
+        <div>box</div>
+    </div>
+    <div class="center line">
+        <div>show</div>
+    </div>
+    <div class="right line">
+    <div style="border:0;">coffee</div>
+    </div>
+    </div>
+</body>
+</html>

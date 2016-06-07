@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>attachment</title>
+        <style>
+        html,body{
+            height: 100%;
+        }
+            body{
+                margin: 0;
+            }
+            div{
+                border: 2px solid purple;
+                height: 100%;
+                background-size: contain;
+                background-position: center;
+                background-attachment:fixed;
+            }
+            .money1{
+                background-image: url(../img/money_1.jpg);
+                border-radius: 10px;
+                }
+            .money2{
+                background-image: url(../img/money_2.png);
+                background-size: cover;
+            }
+            .money3{
+                background-image: url(../img/money_3.jpg);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center">show&nbsp;me&nbsp;the&nbsp;money</h1>
+        <div class="money1"></div>
+        <div class="money2"></div>
+        <div class="money3"></div>
+    </body>
+</html>

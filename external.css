@@ -1,0 +1,6 @@
+body{
+background-color: green;
+}
+h1{color: blue;}
+p{border: 1px solid red; width: 100px; heigth: 100px;}
+.blue{background-color: yellow;}

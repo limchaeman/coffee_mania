@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector</title>
+    <style type="text/css">
+    /*http://www.w3schools.com/cssref/css_selectors.asp*/
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{list-style: none;}
+    /*[class^="color-"]{border: 1px #f00 solid;}
+    [class$="-model"]{border: 1px purple solid; margin-left: 100px;}
+    [class*="text"]{border-width: 3px;}*/
+    #menu{
+        margin: 100px;
+        /*border: 1px darkblue solid;*/
+    }
+    #menu ul ul{
+        display: none;
+    }
+    #menu>ul>li{
+        border-left: 1px purple solid;
+        padding: 10px 0;
+        float: left;
+        margin: 0 20px;
+    }
+    #menu>ul>li:first-child{
+        border-left: 0;
+    }
+    a:link{color: hotpink;}
+    a:hover{color: orange;}
+    a:visited{color: green;}
+    a:active{color: gray;}
+    /*#menu>ul>li:first-child+li{border: 1px #f00 solid;}
+    #menu>ul>li:first-child+li+li{border: 1px #00f solid;}
+    #menu>ul>li:first-child+li+li+li+a{margin: 10px;}*/
+    /*.name::after{
+        content: "반갑습니다.";
+        clear:both;
+    }
+    .name:before{
+        content: "Hum..";
+    }
+    .box{
+        border: 1px #f00 solid;
+        width: 100px;
+        height: 100px;
+    }
+    .a::before{
+        float: left;
+        content: "";
+        display: block;
+        clear: both;
+    }*/
+    .b{
+        width: 200px;
+        margin-top: 10px;
+    }
+    .b::before{
+        display: block;
+        content: "";
+        width: 100px;
+        height: 100px;
+        border: 1px blue solid;
+        transition: 2s;
+    }
+    .b::after{
+        display: block;
+        content: "";
+        width: 100px;
+        height: 100px;
+        border: 1px green solid;
+        transition: 3s;
+    }
+    .b:hover::before{
+        margin-top: 20px;
+        transform: rotateX(180deg);
+        margin-left: 100px;
+    }
+    .b:hover:active{
+        margin-top: 20px;
+        transform: rotateY(-180deg);
+        margin-right: 100px;
+    }
+    </style>
+</head>
+<body>
+    <div class="box b"></div>
+    <!-- <span class="name">안녕하세요?</span> -->
+    <div id="menu">
+        <ul>
+            <li class="이놈"><a href="#">text<a>
+                <ul>
+                <li><a href="#" title="을" class="color-text-model">하위</a></li>
+                <li><a href="#">하위</a></li>
+                <li><a href="#">하위</a></li>
+                </ul>
+                </li>
+            <li><a href="#">text</a></li>
+            <li><a href="#">text</a></li>
+            <li><a href="#" title="하위">text</a></li>
+            <li><a href="#">text</a></li>
+            <li><a href="#">text</a></li>
+        </ul>
+    </div>
+</body>
+</html>

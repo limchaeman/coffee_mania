@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>overflow</title>
+        <style>
+            .box{
+                width: 200px;
+                height: 200px;
+                border: 1px red solid;
+                overflow: hidden;
+            }
+            .box img{
+                width: 100%;
+                height: 100%;
+            }
+            .visible{
+                border: 1px blue solid;
+            }
+            .visible ul{
+                margin: 0;
+                padding: 0;
+            }
+            .visible li{
+                border: 1px green solid;
+            }
+            .visible li .first{
+                width: 300px;
+                height: 300px;
+                overflow: hidden;
+                float: left;
+            }
+            .visible li .first img{
+                width: 100%;
+                margin-top: 200px;
+            }
+            .visible li.first li{
+                margin: top;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <img src="../img/이미지1.jpg">
+        </div>
+        <div class="visible">
+            <ul>
+                <li class="first"><img src="../img/money_1.jpg"></li>
+            </ul>
+        </div>
+    </body>
+</html>

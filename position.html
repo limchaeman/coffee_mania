@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            }
+        div{
+            font-size: 3em;
+        }
+        .box{
+            /*border: 1px #f00 solid;*/
+            position: absolute;
+            background-size: cover;
+            background-position: center;
+        }
+        .box1{
+            left:0;
+            right:50%;
+            top:0;
+            bottom:50%;
+           background: #000;
+           background-image: url(../img/money_1.jpg);
+         }
+         .box2{
+            left:50%;
+            right:0;
+            top:0;
+            bottom:50%;
+           background: #F00;
+           background-image: url(../img/이미지1.jpg);
+         }
+         .box3{
+             left:0;
+            right:50%;
+            top:50%;
+            bottom:0;
+           background: #000;
+           background: #0F0;
+           background-image: url(../img/money_3.jpg);
+         }
+         .box4{
+             left:50%;
+            right:0;
+            top:50%;
+            bottom:0%;
+           background: #00F;
+           background-image: url(../img/이미지2.jpg);
+         }
+    </style>
+</head>
+<body>
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
+    <div class="box3 box"></div>
+    <div class="box4 box"></div>
+</body>
+</html>

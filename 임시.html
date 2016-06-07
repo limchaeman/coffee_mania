@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .menu{
+        border: 1px pink solid;
+        width: 200px;
+    }
+    .menu>ul{
+        margin: 20px;
+}
+    .menu>ul>li>a:hover{
+        color: #f00;
+        margin-left: 20px;
+        font-size: 20px;
+}
+    .menu>ul>li>a:hover+ul{
+        display: block;
+        /*color: blue;
+        text-shadow: 2px 4px 5px #1E90FF;*/
+        height: 100px;
+        transition: 1s cubic-bezier(0, 1.32, 0.57, 1.67);
+        /*background-color: yellow;*/
+    }
+    .menu ul ul{
+        border: 1px brown solid;
+        text-indent: 20px;
+        overflow: hidden;
+        transition: 1s;
+        height: 0;
+    }
+    a:link{color: hotpink;}
+    a:hover{color: orange;}
+    a:visited{color: purple;}
+    a:active{color: gray;}
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="">스마트폰</a>
+                <ul>
+                    <li><a href="">SKT</a></li>
+                    <li><a href="">KT</a></li>
+                    <li><a href="">LGT</a></li>
+                    <li><a href="">알뜰폰</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">SNS</a>
+                <ul>
+                    <li><a href="">카카오톡</a></li>
+                    <li><a href="">페이스북</a></li>
+                    <li><a href="">트위터용</a></li>
+                    <li><a href="">문자전화</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Notice</a>
+                <ul>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">프로필</a></li>
+                    <li><a href="">방명록</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

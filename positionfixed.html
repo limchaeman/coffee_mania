@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PositionFixed</title>
+    <style type="text/css">
+    body{
+        padding-top: 80px;
+    }
+    .top{
+        height: 80px;
+        border: 1px green solid;
+        background-color: rgba(0,0,0,0.5);
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    .fly{
+        width: 80px;
+        height: 200px;
+        border: 1px #f00 solid;
+        position: fixed;
+        left: 50%;
+        margin-left: 410px;
+        top: 90px;
+    }
+    .contents{
+        width: 800px;
+        height: 2000px;
+        border: 1px blue solid;
+        margin: 0 auto;
+        position: relative;
+    }
+    </style>
+</head>
+<body>
+<div class="top"></div>
+<div class="fly"></div>
+<div class="contents"></div>
+</body>
+</html>
